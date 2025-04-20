@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldives Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Maldives Paradise</div>
+            <div class="burger" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#islands">Острови</a></li>
+                    <li><a href="#resorts">Курорти</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Ласкаво просимо на Мальдівські острови!</h1>
+                <p>Райський куточок для вашого відпочинку.</p>
+                <a href="#contact">Забронювати зараз</a>
+            </div>
+        </section>
+
+        <section class="travel-section">
+            <div class="travel-block">
+                <picture>
+                    <source srcset="images/dSwI0JiZyWiEGyJch8vt.avif" type="image/avif">
+                    <source srcset="images/dSwI0JiZyWiEGyJch8vt.webp" type="image/webp">
+                    <img class="travel-image" src="images/dSwI0JiZyWiEGyJch8vt.jpg" alt="Пляж на Мальдивах" >
+                </picture>
+                <div class="travel-text">
+                    <h2>Неймовірні пляжі</h2>
+                    <p>Білосніжний пісок, кристально чиста вода та незабутні заходи сонця чекають на вас!</p>
+                </div>
+            </div>
+
+            <div class="mirrored-block">
+                <picture>
+                    <source srcset="images/kuda_huraa.avif" type="image/avif">
+                    <source srcset="images/kuda_huraa.webp" type="image/webp">
+                    <img class="mirrored-image" src="images/kuda_huraa.jpg" alt="Мальдівський захід сонця">
+                </picture>
+                <div class="mirrored-text">
+                    <h2>Розслабтесь на заході сонця</h2>
+                    <p>Насолоджуйтеся теплим морем і чарівною атмосферою, спостерігаючи за заходом сонця.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-section" id="islands">
+            <h2>Explore Our Islands</h2>
+            <div class="image-carousel">
+                <div class="carousel-images">
+                    <picture>
+                        <source srcset="images/island1.avif" type="image/avif">
+                        <source srcset="images/island1.webp" type="image/webp">
+                        <img src="images/island1.jpg" alt="Island 1" class="carousel-image" width="400" height="300">
+                    </picture>
+                    <picture>
+                        <source srcset="images/island2.avif" type="image/avif">
+                        <source srcset="images/island2.webp" type="image/webp">
+                        <img src="images/island2.jpg" alt="Island 2" class="carousel-image" width="400" height="300">
+                    </picture>
+                    <picture>
+                        <source srcset="images/island3.avif" type="image/avif">
+                        <source srcset="images/island3.webp" type="image/webp">
+                        <img src="images/island3.jpg" alt="Island 3" class="carousel-image" width="400" height="300">
+                    </picture>
+                </div>
+                <button class="carousel-arrow left">&#8592;</button>
+                <button class="carousel-arrow right">&#8594;</button>
+            </div>
+            <div class="islands-statistics">
+                <h3>Мальдіви в цифрах</h3>
+                <p>Мальдіви — це не тільки райський куточок на Землі, але й неймовірне місце, яке щороку приваблює мільйони туристів.</p>
+                <ul>
+                    <li>500 000+ туристів щорічно обирають Мальдіви для свого відпочинку.</li>
+                    <li>1200+ островів, з яких лише близько 200 населені.</li>
+                    <li>50+ готелів на воді, які пропонують незабутній відпочинок прямо над океаном.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="hotel" id="resorts">
+            <h2>Наші готелі</h2>
+            <div class="hotel-gallery">
+                <div class="hotels-container">
+                    <div class="hotel-card">
+                        <picture>
+                            <source srcset="images/hotel1.avif" type="image/avif">
+                            <source srcset="images/hotel1.webp" type="image/webp">
+                            <img src="images/hotel1.jpg" alt="Kurumba Maldives" width="400" height="300">
+                        </picture>
+                        <div class="hotel-info">
+                            <h3>Kurumba Maldives</h3>
+                            <p>Розкішний відпочинок з білими пляжами та кришталево чистою водою.</p>
+                            <button class="book-button">Забронювати</button>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card">
+                        <picture>
+                            <source srcset="images/hotel2.avif" type="image/avif">
+                            <source srcset="images/hotel2.webp" type="image/webp">
+                            <img src="images/hotel2.jpg" alt="Baros Maldives" width="400" height="300">
+                        </picture>
+                        <div class="hotel-info">
+                            <h3>Baros Maldives</h3>
+                            <p>Один з найпрестижніших курортів Мальдів — вілли над океаном, спа та дайвінг поруч із рифами.</p>
+                            <button class="book-button">Забронювати</button>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card">
+                        <picture>
+                            <source srcset="images/hotel3.avif" type="image/avif">
+                            <source srcset="images/hotel3.webp" type="image/webp">
+                            <img src="images/hotel3.jpg" alt="Velassaru Maldives" width="400" height="300">
+                        </picture>
+                        <div class="hotel-info">
+                            <h3>Velassaru Maldives</h3>
+                            <p>Сучасний стиль, приватність і вражаючі заходи сонця з вашої тераси на воді.</p>
+                            <button class="book-button">Забронювати</button>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card">
+                        <picture>
+                            <source srcset="images/hotel4.avif" type="image/avif">
+                            <source srcset="images/hotel4.webp" type="image/webp">
+                            <img src="images/hotel4.jpg" alt="Sun Island" width="400" height="300">
+                        </picture>
+                        <div class="hotel-info">
+                            <h3>Sun Island</h3>
+                            <p>Цей релакс готель поєднує поняття розкішу та усамітнення посеред океану.</p>
+                            <button class="book-button">Забронювати</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-booking-section" id="contact">
+            <h2>Контакти та бронювання</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Kurumba Maldives</h3>
+                    <p><strong>Email:</strong> info@kurumba.mv</p>
+                    <p><strong>Телефон:</strong> +960 664-2323</p>
+                    <a href="https://www.kurumba.com" target="_blank" class="contact-btn">Перейти на сайт</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Baros Maldives</h3>
+                    <p><strong>Email:</strong> reservations@baros.com</p>
+                    <p><strong>Телефон:</strong> +960 664-2672</p>
+                    <a href="https://www.baros.com" target="_blank" class="contact-btn">Перейти на сайт</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Velassaru Maldives</h3>
+                    <p><strong>Email:</strong> stay@velassaru.com</p>
+                    <p><strong>Телефон:</strong> +960 665-6100</p>
+                    <a href="https://www.velassaru.com" target="_blank" class="contact-btn">Перейти на сайт</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Sun Island</h3>
+                    <p><strong>Email:</strong> reservations@sunisland</p>
+                    <p><strong>Телефон:</strong> +960 664-2222</p>
+                    <a href="https://www.sunislandresort.com" target="_blank" class="contact-btn">Перейти на сайт</a>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <h2>Про нас</h2>
+            <p>Maldives Paradise — це віртуальний гід по найкращих куточках Мальдів. Ми допомагаємо вам обрати ідеальне місце для відпочинку, бронювати готелі та отримувати корисну інформацію про острови.</p>
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Maldives Paradise. Усі права захищені.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
