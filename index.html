@@ -1,202 +1,250 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maldives Paradise</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Maldives Paradise</div>
-            <div class="burger" id="burger-menu">
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
+<body class="bg-gray-100">
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold text-gray-800">
+      </div>
+    </div>
+
+
+
+      <nav class="hidden md:flex gap-6 text-gray-700">
+        <a href="#" class="hover:text-blue-600">Головна</a>
+        <a href="#" class="hover:text-blue-600">Про нас</a>
+        <a href="#" class="hover:text-blue-600">Послуги</a>
+        <a href="#" class="hover:text-blue-600">Контакти</a>
+      </nav>
+
+
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Головна</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Про нас</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Послуги</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Контакти</a>
+    </div>
+  </header>
+
+
+  <section class="hero-section">
+    <div class="overlay">
+      <h1>Explore Indonesia</h1>
+      <button>Start travelling</button>
+    </div> 
+
+<div class="info"></div>
+    <div class="card">
+      <h3>01</h3>
+      <h4>Title here</h4>
+      <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
+    </div>
+    <div class="card">
+      <h3>02</h3>
+      <h4>Title here</h4>
+      <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
+    </div>
+    <div class="card">
+      <h3>03</h3>
+      <h4>Title here</h4>
+      <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
+    </div>
+  </section>
+  <section class="section">
+
+    <div class="the walkways">
+      <picture>
+        <source srcset="./images/image1.avif 1x, ./images/image1-2x.avif 2x" type="image/avif">
+        <source srcset="./images/image1.webp 1x, ./images/image1-2x.webp 2x" type="image/webp">
+        <img src="./images/Rectangle9.jpg" alt="Walkways of Indonesia" />
+      </picture>
+      <div class="card-content">
+        <h2>The walkways of Indonesia spellbind</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  
+    <div class="card reverse">
+      <picture>
+        <source srcset="./images/image2.avif 1x, ./images/image2-2x.avif 2x" type="image/avif">
+        <source srcset="./images/image2.webp 1x, ./images/image2-2x.webp 2x" type="image/webp">
+        <img src="./images/Rectangle10.jpg" alt="Perfect beaches" />
+      </picture>
+      <div class="card-content">
+        <h2>Perfect beaches exude relaxation and fun</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  
+  </section>
+  
+
+  <section class="explore-and-numbers">
+    <div class="explore-and-numbers-container">
+      <div class="dark-overlay">
+        <div class="hero-content">
+          <h2 class="hero-title">Explore Our Secrets</h2>
+          <div class="slider">
+            <button class="nav prev"></button>
+            <div class="slides">
+              <picture>
+                <source srcset="./images/Rectangle 1258.avif 1x, ./images/Rectangle 1258-2x.avif 2x" type="image/avif">
+                <source srcset="./images/Rectangle 1258.webp 1x, ./images/Rectangle 1258-2x.webp 2x" type="image/webp">
+                <img src="./images/Rectangle 1258.jpg" alt="Image 1">
+              </picture>
+              <picture>
+                <source srcset="./images/Rectangle 1259.avif 1x, ./images/Rectangle 1259-2x.avif 2x" type="image/avif">
+                <source srcset="./images/Rectangle 1259.webp 1x, ./images/Rectangle 1259-2x.webp 2x" type="image/webp">
+                <img src="./images/Rectangle 1259.jpg" alt="Image 2">
+              </picture>
+              <picture>
+                <source srcset="./images/Rectangle 1260.avif 1x, ./images/Rectangle 1260-2x.avif 2x" type="image/avif">
+                <source srcset="./images/Rectangle 1260.webp 1x, ./images/Rectangle 1260-2x.webp 2x" type="image/webp">
+                <img src="./images/Rectangle 1260.jpg" alt="Image 3">
+              </picture>
             </div>
-            <nav>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#home">Головна</a></li>
-                    <li><a href="#islands">Острови</a></li>
-                    <li><a href="#resorts">Курорти</a></li>
-                    <li><a href="#about">Про нас</a></li>
-                    <li><a href="#contact">Контакти</a></li>
-                </ul>
-            </nav>
+            <button class="nav next"></button>
+          </div>
         </div>
-    </header>
+      </div>
+      <div class="container">
+        <h2>By The Numbers</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="stats">
+          <div class="stat">
+            <h3>100+</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="stat">
+            <h3>43,000+</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="stat">
+            <h3>30+</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lifealife">
+    <div class="Photo">
+      <h2>Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
+      <picture>
+        <source srcset="./images/image2.avif 1x, ./images/image2-2x.avif 2x" type="image/avif">
+        <source srcset="./images/image2.webp 1x, ./images/image2-2x.webp 2x" type="image/webp">
+        <img src="./images/image2.jpg" alt="In the country" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+      </picture>
+  <div class="cards">
+    <div class="card">
+      <picture>
+        <source srcset="./images/ponatna1.avif 1x, ./images/ponatna1-2x.avif 2x" type="image/avif">
+        <source srcset="./images/ponatna1.webp 1x, ./images/ponatna1-2x.webp 2x" type="image/webp">
+        <img src="./images/ponatna1.jpg" alt="In the country" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+      </picture>
+      <div class="info">
+        <h3>In The Country</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <picture>
+        <source srcset="./images/Image 01.avif 1x, ./images/image2-2x.avif 2x" type="image/avif">
+        <source srcset="./images/Image 01.webp 1x, ./images/image2-2x.webp 2x" type="image/webp">
+        <img src="./images/image2.jpg" alt="In the country" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+      </picture>
+      <div class="info">
+        <h3>In The City</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="photo-gallery">
+    <h2>Photo Gallery</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="gallery-grid">
+      <picture>
+        <source srcset="./images/Image01.avif 1x, ./images/Image 01-2x.avif 2x" type="image/avif">
+        <source srcset="./images/Image 01.webp 1x, ./images/Image 01-2x.webp 2x" type="image/webp">
+        <img src="./images/Image01.jpg" alt="1" style="width: 250px;">
+      </picture>
+      <picture>
+        <source srcset="./images/Image02.avif 1x, ./images/Image 02-2x.avif 2x" type="image/avif">
+        <source srcset="./images/Image 02.webp 1x, ./images/Image 02-2x.webp 2x" type="image/webp">
+        <img src="./images/Image02.jpg" alt="2" style="width: 250px;">
+      </picture>
+      <picture>
+        <source srcset="./images/Image03.avif 1x, ./images/Image 03-2x.avif 2x" type="image/avif">
+        <source srcset="./images/Image 03.webp 1x, ./images/Image 03-2x.webp 2x" type="image/webp">
+        <img src="./images/Image03.jpg" alt="3" style="width: 250px;">
+      </picture>
+      <picture>
+        <source srcset="./images/Image04.avif 1x, ./images/Image 04-2x.avif 2x" type="image/avif">
+        <source srcset="./images/Image 04.webp 1x, ./images/Image 04-2x.webp 2x" type="image/webp">
+        <img src="./images/Image04.jpg" alt="4" style="width: 250px;">
+      </picture>
+      <picture>
+        <source srcset="./images/Image05.avif 1x, ./images/Image 05-2x.avif 2x" type="image/avif">
+        <source srcset="./images/Image 05.webp 1x, ./images/Image 05-2x.webp 2x" type="image/webp">
+        <img src="./images/Image05.jpg" alt="5" style="width: 250px;">
+      </picture>
+      <picture>
+        <source srcset="./images/Image06.avif 1x, ./images/Image 06-2x.avif 2x" type="image/avif">
+        <source srcset="./images/Image 06.webp 1x, ./images/Image 06-2x.webp 2x" type="image/webp">
+        <img src="./images/Image06.jpg" alt="6" style="width: 250px;">
+      </picture>
+    </div>
+  </section>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>Ласкаво просимо на Мальдівські острови!</h1>
-                <p>Райський куточок для вашого відпочинку.</p>
-                <a href="#contact">Забронювати зараз</a>
-            </div>
-        </section>
-
-        <section class="travel-section">
-            <div class="travel-block">
-                <picture>
-                    <source srcset="images/dSwI0JiZyWiEGyJch8vt.avif" type="image/avif">
-                    <source srcset="images/dSwI0JiZyWiEGyJch8vt.webp" type="image/webp">
-                    <img class="travel-image" src="images/dSwI0JiZyWiEGyJch8vt.jpg" alt="Пляж на Мальдивах" >
-                </picture>
-                <div class="travel-text">
-                    <h2>Неймовірні пляжі</h2>
-                    <p>Білосніжний пісок, кристально чиста вода та незабутні заходи сонця чекають на вас!</p>
-                </div>
-            </div>
-
-            <div class="mirrored-block">
-                <picture>
-                    <source srcset="images/kuda_huraa.avif" type="image/avif">
-                    <source srcset="images/kuda_huraa.webp" type="image/webp">
-                    <img class="mirrored-image" src="images/kuda_huraa.jpg" alt="Мальдівський захід сонця">
-                </picture>
-                <div class="mirrored-text">
-                    <h2>Розслабтесь на заході сонця</h2>
-                    <p>Насолоджуйтеся теплим морем і чарівною атмосферою, спостерігаючи за заходом сонця.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="explore-section" id="islands">
-            <h2>Explore Our Islands</h2>
-            <div class="image-carousel">
-                <div class="carousel-images">
-                    <picture>
-                        <source srcset="images/island1.avif" type="image/avif">
-                        <source srcset="images/island1.webp" type="image/webp">
-                        <img src="images/island1.jpg" alt="Island 1" class="carousel-image" width="400" height="300">
-                    </picture>
-                    <picture>
-                        <source srcset="images/island2.avif" type="image/avif">
-                        <source srcset="images/island2.webp" type="image/webp">
-                        <img src="images/island2.jpg" alt="Island 2" class="carousel-image" width="400" height="300">
-                    </picture>
-                    <picture>
-                        <source srcset="images/island3.avif" type="image/avif">
-                        <source srcset="images/island3.webp" type="image/webp">
-                        <img src="images/island3.jpg" alt="Island 3" class="carousel-image" width="400" height="300">
-                    </picture>
-                </div>
-                <button class="carousel-arrow left">&#8592;</button>
-                <button class="carousel-arrow right">&#8594;</button>
-            </div>
-            <div class="islands-statistics">
-                <h3>Мальдіви в цифрах</h3>
-                <p>Мальдіви — це не тільки райський куточок на Землі, але й неймовірне місце, яке щороку приваблює мільйони туристів.</p>
-                <ul>
-                    <li>500 000+ туристів щорічно обирають Мальдіви для свого відпочинку.</li>
-                    <li>1200+ островів, з яких лише близько 200 населені.</li>
-                    <li>50+ готелів на воді, які пропонують незабутній відпочинок прямо над океаном.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="hotel" id="resorts">
-            <h2>Наші готелі</h2>
-            <div class="hotel-gallery">
-                <div class="hotels-container">
-                    <div class="hotel-card">
-                        <picture>
-                            <source srcset="images/hotel1.avif" type="image/avif">
-                            <source srcset="images/hotel1.webp" type="image/webp">
-                            <img src="images/hotel1.jpg" alt="Kurumba Maldives" width="400" height="300">
-                        </picture>
-                        <div class="hotel-info">
-                            <h3>Kurumba Maldives</h3>
-                            <p>Розкішний відпочинок з білими пляжами та кришталево чистою водою.</p>
-                            <button class="book-button">Забронювати</button>
-                        </div>
-                    </div>
-
-                    <div class="hotel-card">
-                        <picture>
-                            <source srcset="images/hotel2.avif" type="image/avif">
-                            <source srcset="images/hotel2.webp" type="image/webp">
-                            <img src="images/hotel2.jpg" alt="Baros Maldives" width="400" height="300">
-                        </picture>
-                        <div class="hotel-info">
-                            <h3>Baros Maldives</h3>
-                            <p>Один з найпрестижніших курортів Мальдів — вілли над океаном, спа та дайвінг поруч із рифами.</p>
-                            <button class="book-button">Забронювати</button>
-                        </div>
-                    </div>
-
-                    <div class="hotel-card">
-                        <picture>
-                            <source srcset="images/hotel3.avif" type="image/avif">
-                            <source srcset="images/hotel3.webp" type="image/webp">
-                            <img src="images/hotel3.jpg" alt="Velassaru Maldives" width="400" height="300">
-                        </picture>
-                        <div class="hotel-info">
-                            <h3>Velassaru Maldives</h3>
-                            <p>Сучасний стиль, приватність і вражаючі заходи сонця з вашої тераси на воді.</p>
-                            <button class="book-button">Забронювати</button>
-                        </div>
-                    </div>
-
-                    <div class="hotel-card">
-                        <picture>
-                            <source srcset="images/hotel4.avif" type="image/avif">
-                            <source srcset="images/hotel4.webp" type="image/webp">
-                            <img src="images/hotel4.jpg" alt="Sun Island" width="400" height="300">
-                        </picture>
-                        <div class="hotel-info">
-                            <h3>Sun Island</h3>
-                            <p>Цей релакс готель поєднує поняття розкішу та усамітнення посеред океану.</p>
-                            <button class="book-button">Забронювати</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-booking-section" id="contact">
-            <h2>Контакти та бронювання</h2>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <h3>Kurumba Maldives</h3>
-                    <p><strong>Email:</strong> info@kurumba.mv</p>
-                    <p><strong>Телефон:</strong> +960 664-2323</p>
-                    <a href="https://www.kurumba.com" target="_blank" class="contact-btn">Перейти на сайт</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Baros Maldives</h3>
-                    <p><strong>Email:</strong> reservations@baros.com</p>
-                    <p><strong>Телефон:</strong> +960 664-2672</p>
-                    <a href="https://www.baros.com" target="_blank" class="contact-btn">Перейти на сайт</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Velassaru Maldives</h3>
-                    <p><strong>Email:</strong> stay@velassaru.com</p>
-                    <p><strong>Телефон:</strong> +960 665-6100</p>
-                    <a href="https://www.velassaru.com" target="_blank" class="contact-btn">Перейти на сайт</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Sun Island</h3>
-                    <p><strong>Email:</strong> reservations@sunisland</p>
-                    <p><strong>Телефон:</strong> +960 664-2222</p>
-                    <a href="https://www.sunislandresort.com" target="_blank" class="contact-btn">Перейти на сайт</a>
-                </div>
-            </div>
-        </section>
-        <section class="about-section" id="about">
-            <h2>Про нас</h2>
-            <p>Maldives Paradise — це віртуальний гід по найкращих куточках Мальдів. Ми допомагаємо вам обрати ідеальне місце для відпочинку, бронювати готелі та отримувати корисну інформацію про острови.</p>
-        </section>        
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Maldives Paradise. Усі права захищені.</p>
-    </footer>
-
-    <script src="index.js"></script>
+  <section class="getting-there">
+    <h2>Getting there</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Booking your flights</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Choosing your hotel</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <div class="substep">
+            <h4>Travelling there</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Planning your experiences</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
