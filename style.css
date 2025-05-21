@@ -8,6 +8,120 @@ body {
   background-color: #f9fafb;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: relative;
+      background-image: url(./images/diego-gutierrez-NRn5rrBnH8w-unsplash1.jpg);
+      background-size: cover;
+   background-position: center;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.hero-text button {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #f84c55;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.video-thumbnail {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  width: 300px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 22px);
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.cards1 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.card1 {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
 /* Секция галереи */
 .photo-gallery {
   text-align: center;
@@ -190,5 +304,90 @@ body {
   
   .card-content button:hover {
     background-color: #c2185b;
-  }
+  } 
+
+  .lifealife {
+  padding: 40px;
+  border-radius: 12px;
+  margin: auto;    
+  background-image:url(./images/image2.jpg);
+    background-size: cover;
+   background-position: center;
+   height: 100vh;
+   position: relative;
+   background-color: #00000091;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.main-image {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.main-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.cards.two-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.cards.two-column .card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 1 45%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.cards.two-column .card img {
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cards.two-column .card .info {
+  flex: 1;
+}
+
+.cards.two-column .card .info h3 {
+  color: #fff;
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.cards.two-column .card .info p {
+  color: #ccc;
+  font-size: 14px;
+}
   
