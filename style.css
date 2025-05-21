@@ -1,126 +1,121 @@
 
-
-/* Общий стиль страницы */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9fafb;
+.header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.29)),
+        url(./img.background/bg_s1.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  width: 100%;
-  top: 0;
+.btn_trevelling {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "DM Sans";
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    display: flex;
+    width: 315px;
+    height: 59px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 107px;
+    background: #DD2242;
 }
 
-.logo img {
-  height: 50px;
+.menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
+.header_nav {
+    margin-top: 30px;
+    padding: 10px;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+.nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-.icons {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.2rem;
+.nav_item {
+    padding: 15px;
+    transform: translateY(-50%);
 }
 
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  position: relative;
-      background-image: url(./images/diego-gutierrez-NRn5rrBnH8w-unsplash1.jpg);
-      background-size: cover;
-   background-position: center;
+.menu_header_burger {
+    display: none;
+    color: #FFF;
+}
+.container_hero_info {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 58.152px;
+    font-weight: 900;
+    line-height: 1.5;
 }
 
-.hero-text h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  line-height: 1.2;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 0.5rem;
-  display: inline-block;
+.title_here_count_item {
+    padding-bottom: 40px;
+    max-width: 210px;
+    align-items: center;
+    height: 115px;
+    margin: 32px;
+    list-style-type: none;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 16px;
+    line-height: 0.4;
+
 }
 
-.hero-text button {
-  margin-top: 1rem;
-  padding: 0.8rem 2rem;
-  background-color: #f84c55;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 1rem;
+.title_here_count {
+    margin-top: 89px;
+    padding-top: 15px;
 }
 
-.video-thumbnail {
-  position: absolute;
-  right: 2rem;
-  bottom: 2rem;
-  width: 300px;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #000;
+
+.title_here_count_item_numders {
+    padding: 10px;
+    color: #DD2242;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 900;
 }
 
-.video-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.title_here_count_item_text {
+    color: #939393;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
-.play-btn {
-  position: absolute;
-  top: calc(50% - 22px);
-  left: calc(50% - 22px);
-  width: 44px;
-  height: 44px;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
+.title_here_count_item_title {
+    margin: 4px;
 }
 
-.cards1 {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.3);
+.h1_hero_title {
+    margin: 10px;
+    width: 314px;
+    height: 125px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 58.152px;
+    font-weight: 900;
+    line-height: 1.2;
 }
 
-.card1 {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 1rem;
-  width: 200px;
-  border-radius: 10px;
-  text-align: center;
-  backdrop-filter: blur(5px);
+.bg_black {
+    width: 314px;
+    height: 472px;
+    background: rgba(0, 0, 0, 0.6);
 }
 /* Секция галереи */
 .photo-gallery {
