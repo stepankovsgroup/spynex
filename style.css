@@ -1,3 +1,8 @@
+header>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .header {
     background-image:
@@ -118,117 +123,251 @@
     background: rgba(0, 0, 0, 0.6);
 }
 /* Секция галереи */
+.photo-gallery * {
+  margin: 0;
+  padding: 0;
+}
+
 .photo-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.photo-gallery .content {
+  width: 1258px;
+}
+
+.gallery-header {
   text-align: center;
-  padding: 4rem 1rem;
 }
 
-/* Заголовок */
-.photo-gallery h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
+.gallery-header h2 {
+  font-size: 60px;
+  color: #010A20;
+  line-height: 150%;
+  margin-bottom: 12px;
 }
 
-/* Подзаголовок */
-.photo-gallery p {
+.gallery-header p {
   color: #6b7280;
-  max-width: 600px;
-  margin: 0 auto 2rem;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
 }
 
-/* Сетка галереи */
-.gallery-grid {
+.gallery {
+  height: 770px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 24px;
 }
 
-/* Контейнер изображения */
-.gallery-grid picture {
-  display: block;
-  overflow: hidden;
-}
+.image1 { grid-area: 1 / 1 / 5 / 2; }
+.image2 { grid-area: 1 / 2 / 3 / 3; }
+.image3 { grid-area: 3 / 2 / 7 / 3; }
+.image4 { grid-area: 1 / 3 / 4 / 4; }
+.image5 { grid-area: 4 / 3 / 7 / 4; }
+.image6 { grid-area: 5 / 1 / 7 / 2; }
 
-/* Изображения */
-.gallery-grid img {
+
+.gallery img {
   width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-/* Эффект при наведении */
-.gallery-grid img:hover {
-  transform: scale(1.02);
+  border-radius: 12px;
+  display: block;
 }
 
 
-.getting-there {
-  background-color: #e3f1fb;
-  padding: 50px 20px;
+.steps * {
+  margin: 0;
+  padding: 0;
 }
 
-.getting-there h2 {
-  margin-bottom: 30px;
-  text-align: center;
+.steps {
+  background-color: #DCE8F2;
+  font-family: "DM Sans", Arial, sans-serif;
+  color: #010A20;
+}
+
+.steps .content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.steps-header h2 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.step-container {
+  position: relative;
+  border-left: 2px solid #cfd8e3;
+  padding-left: 40px;
 }
 
 .step {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 30px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  margin-bottom: 60px;
 }
 
 .step-number {
-  background-color: red;
-  color: white;
-  font-weight: bold;
+  position: absolute;
+  left: -60px;
+  top: 0;
+  background-color: #DD2242;
+  color: #fff;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
   text-align: center;
-  line-height: 32px;
-  font-size: 16px;
-  flex-shrink: 0;
 }
 
-.step h3 {
-  margin: 0 0 8px;
+.step-content h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 12px;
 }
 
-.step-image {
-  margin-top: 10px;
+.step-content p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #15143966;
 }
 
-.step-image img {
-  max-width: 100%;
-  height: auto;
+.sub-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.sub-step img {
+  width: auto;
+  height: 110px;
   border-radius: 6px;
-  margin-top: 10px;
 }
 
-@media (max-width: 600px) {
+.outside-content {
+  padding-left: 40px;
+  margin-top: -48px
+}
+
+.outside-content p{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #15143966;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #eb2c3b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  .gallery-header h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .gallery-header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 400px;
+    gap: 12px;
+  }
+
+  .image1 { grid-area: 1 / 1 / 3 / 2; }
+  .image2 { grid-area: 3 / 1 / 4 / 2; }
+  .image3 { grid-area: 1 / 2 / 2 / 3; }
+  .image4 { grid-area: 2 / 2 / 4 / 3; }
+  .image5 { grid-area: 4 / 1 / 6 / 2; }
+  .image6 { grid-area: 4 / 2 / 6 / 3; }
+
+  .steps-header h2 {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .step-container {
+    border-left: none;
+    padding-left: 0px;
+  }
+
   .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .step-number {
-    margin-bottom: 10px;
+    position: relative;
+    left: 0;
+  }
+
+  .step-content h4 {
+    text-align: center;
+  }
+
+  .step-content p {
+    text-align: center;
+  }
+
+  .sub-step {
+    flex-direction: column;
+  }
+
+  .sub-step img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sub-step .step-content {
+    width: 100%;
+  }
+
+  .outside-content {
+    padding: 0px;
+  }
+
+  .outside-content p{
+    text-align: center;
+  }
+
+  .learn-more {
+    display: none;
   }
 }
-
-СЕКЦИЯ МОЙСЕЕНКО|
                 
 
 body {
