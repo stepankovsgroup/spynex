@@ -1,76 +1,15 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Header Example</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100">
-
-  <header class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <div class="text-2xl font-bold text-gray-800">
-      </div>
-    </div>
-
-
-
-      <nav class="hidden md:flex gap-6 text-gray-700">
-        <a href="#" class="hover:text-blue-600">Головна</a>
-        <a href="#" class="hover:text-blue-600">Про нас</a>
-        <a href="#" class="hover:text-blue-600">Послуги</a>
-        <a href="#" class="hover:text-blue-600">Контакти</a>
-      </nav>
-
-
-      <button id="menu-toggle" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-
-
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Головна</a>
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Про нас</a>
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Послуги</a>
-      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Контакти</a>
-    </div>
-  </header>
-
-
-  <section class="hero-section">
-    <div class="overlay">
-      <h1>Explore Indonesia</h1>
-      <button>Start travelling</button>
-    </div> 
-
-<div class="info"></div>
+  <title>Explore Indonesia</title>
+  <link rel="stylesheet" href="style.css" />
+  <section class="walkways">
     <div class="card">
-      <h3>01</h3>
-      <h4>Title here</h4>
-      <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
-    </div>
-    <div class="card">
-      <h3>02</h3>
-      <h4>Title here</h4>
-      <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
-    </div>
-    <div class="card">
-      <h3>03</h3>
-      <h4>Title here</h4>
-      <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
-    </div>
-  </section>
-  <section class="section">
-
-    <div class="the walkways">
       <picture>
-        <source srcset="./images/image1.avif 1x, ./images/image1-2x.avif 2x" type="image/avif">
-        <source srcset="./images/image1.webp 1x, ./images/image1-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Rectangle9.avif 1x, ./images.avif/Rectangle9-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Rectangle9.webp 1x, ./images.webp/Rectangle9-2x.webp 2x" type="image/webp">
         <img src="./images/Rectangle9.jpg" alt="Walkways of Indonesia" />
       </picture>
       <div class="card-content">
@@ -82,8 +21,8 @@
   
     <div class="card reverse">
       <picture>
-        <source srcset="./images/image2.avif 1x, ./images/image2-2x.avif 2x" type="image/avif">
-        <source srcset="./images/image2.webp 1x, ./images/image2-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Rectangle10.avif 1x, ./images.avif/Rectangle10-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Rectangle10.webp 1x, ./images.webp/Rectangle10-2x.webp 2x" type="image/webp">
         <img src="./images/Rectangle10.jpg" alt="Perfect beaches" />
       </picture>
       <div class="card-content">
@@ -92,124 +31,41 @@
         <button>Learn More</button>
       </div>
     </div>
-  
   </section>
-  
 
-  <section class="explore-and-numbers">
-    <div class="explore-and-numbers-container">
-      <div class="dark-overlay">
-        <div class="hero-content">
-          <h2 class="hero-title">Explore Our Secrets</h2>
-          <div class="slider">
-            <button class="nav prev"></button>
-            <div class="slides">
-              <picture>
-                <source srcset="./images/Rectangle 1258.avif 1x, ./images/Rectangle 1258-2x.avif 2x" type="image/avif">
-                <source srcset="./images/Rectangle 1258.webp 1x, ./images/Rectangle 1258-2x.webp 2x" type="image/webp">
-                <img src="./images/Rectangle 1258.jpg" alt="Image 1">
-              </picture>
-              <picture>
-                <source srcset="./images/Rectangle 1259.avif 1x, ./images/Rectangle 1259-2x.avif 2x" type="image/avif">
-                <source srcset="./images/Rectangle 1259.webp 1x, ./images/Rectangle 1259-2x.webp 2x" type="image/webp">
-                <img src="./images/Rectangle 1259.jpg" alt="Image 2">
-              </picture>
-              <picture>
-                <source srcset="./images/Rectangle 1260.avif 1x, ./images/Rectangle 1260-2x.avif 2x" type="image/avif">
-                <source srcset="./images/Rectangle 1260.webp 1x, ./images/Rectangle 1260-2x.webp 2x" type="image/webp">
-                <img src="./images/Rectangle 1260.jpg" alt="Image 3">
-              </picture>
-            </div>
-            <button class="nav next"></button>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <h2>By The Numbers</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="stats">
-          <div class="stat">
-            <h3>100+</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="stat">
-            <h3>43,000+</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="stat">
-            <h3>30+</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="lifealife">
-    <div class="Photo">
-      <h2>Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
-      <picture>
-        <source srcset="./images/image2.avif 1x, ./images/image2-2x.avif 2x" type="image/avif">
-        <source srcset="./images/image2.webp 1x, ./images/image2-2x.webp 2x" type="image/webp">
-        <img src="./images/image2.jpg" alt="In the country" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
-      </picture>
-  <div class="cards">
-    <div class="card">
-      <picture>
-        <source srcset="./images/ponatna1.avif 1x, ./images/ponatna1-2x.avif 2x" type="image/avif">
-        <source srcset="./images/ponatna1.webp 1x, ./images/ponatna1-2x.webp 2x" type="image/webp">
-        <img src="./images/ponatna1.jpg" alt="In the country" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
-      </picture>
-      <div class="info">
-        <h3>In The Country</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.</p>
-      </div>
-    </div>
   
-    <div class="card">
-      <picture>
-        <source srcset="./images/Image 01.avif 1x, ./images/image2-2x.avif 2x" type="image/avif">
-        <source srcset="./images/Image 01.webp 1x, ./images/image2-2x.webp 2x" type="image/webp">
-        <img src="./images/image2.jpg" alt="In the country" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
-      </picture>
-      <div class="info">
-        <h3>In The City</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in.</p>
-      </div>
-    </div>
-  </div>
-  </section>
   <section class="photo-gallery">
     <h2>Photo Gallery</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="gallery-grid">
       <picture>
-        <source srcset="./images/Image01.avif 1x, ./images/Image 01-2x.avif 2x" type="image/avif">
-        <source srcset="./images/Image 01.webp 1x, ./images/Image 01-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Image01.avif 1x, ./images.avif/Image 01-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Image01.webp 1x, ./images.webp/Image 01-2x.webp 2x" type="image/webp">
         <img src="./images/Image01.jpg" alt="1" style="width: 250px;">
       </picture>
       <picture>
-        <source srcset="./images/Image02.avif 1x, ./images/Image 02-2x.avif 2x" type="image/avif">
-        <source srcset="./images/Image 02.webp 1x, ./images/Image 02-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Image02.avif 1x, ./images.avif/Image 02-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Image 02.webp 1x, ./images.webp/Image 02-2x.webp 2x" type="image/webp">
         <img src="./images/Image02.jpg" alt="2" style="width: 250px;">
       </picture>
       <picture>
-        <source srcset="./images/Image03.avif 1x, ./images/Image 03-2x.avif 2x" type="image/avif">
-        <source srcset="./images/Image 03.webp 1x, ./images/Image 03-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Image03.avif 1x, ./images.avif/Image 03-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Image 03.webp 1x, ./images.webp/Image 03-2x.webp 2x" type="image/webp">
         <img src="./images/Image03.jpg" alt="3" style="width: 250px;">
       </picture>
       <picture>
-        <source srcset="./images/Image04.avif 1x, ./images/Image 04-2x.avif 2x" type="image/avif">
-        <source srcset="./images/Image 04.webp 1x, ./images/Image 04-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Image04.avif 1x, ./images.avif/Image 04-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Image 04.webp 1x, ./images.webp/Image 04-2x.webp 2x" type="image/webp">
         <img src="./images/Image04.jpg" alt="4" style="width: 250px;">
       </picture>
       <picture>
-        <source srcset="./images/Image05.avif 1x, ./images/Image 05-2x.avif 2x" type="image/avif">
-        <source srcset="./images/Image 05.webp 1x, ./images/Image 05-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Image05.avif 1x, ./images.avif/Image 05-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Image 05.webp 1x, ./images.webp/Image 05-2x.webp 2x" type="image/webp">
         <img src="./images/Image05.jpg" alt="5" style="width: 250px;">
       </picture>
       <picture>
-        <source srcset="./images/Image06.avif 1x, ./images/Image 06-2x.avif 2x" type="image/avif">
-        <source srcset="./images/Image 06.webp 1x, ./images/Image 06-2x.webp 2x" type="image/webp">
+        <source srcset="./images.avif/Image06.avif 1x, ./images.avif/Image 06-2x.avif 2x" type="image/avif">
+        <source srcset="./images.webp/Image 06.webp 1x, ./images.webp/Image 06-2x.webp 2x" type="image/webp">
         <img src="./images/Image06.jpg" alt="6" style="width: 250px;">
       </picture>
     </div>
@@ -246,5 +102,6 @@
       </div>
     </div>
   </section>
+  <footer>cayo perico ouuuuuuuu yeeeees</footer>
 </body>
 </html>
