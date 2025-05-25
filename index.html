@@ -1,46 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Explore Indonesia</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body> 
-  <header>
-  <section class="navbar container">
-   
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Experiences</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
-  </section>
+ <html lang="en">
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Explore Indonesia</h1>
-      <button id="startBtn">Start travelling</button>
-    </div>
-<div class="cards1">
-    <div class="card1">
-      <h3>Title here</h3>
-      <p>Lorem ipsum dolor sit amet amet sit amet.</p>
-    </div>
-    <div class="card1">
-      <h3>Title here</h3>
-      <p>Lorem ipsum dolor sit amet amet sit amet.</p>
-    </div>
-    <div class="card1">
-      <h3>Title here</h3>
-      <p>Lorem ipsum dolor sit amet amet sit amet.</p>
-    </div>
-  </div>
-  </section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proj-7</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="menu_header">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img.hero1/Group12.webp" type="image/svg" />
+                        <img src="./img.hero1/Group12.svg" alt="logo" />
+                    </picture>
+                </a>
+                <nav class="header_nav">
+                    <ul class="menu_header_burger">
+                        <li class="menu_header_burger_item">
+                            <a href="#getting_there">destinations</a>
+                        </li>
+                        <li class="menu_header_burger_item">
+                            <a href="#explore_our_secrets">experiences</a>
+                        </li>
+                        <li class="menu_header_burger_item">
+                            <a href="#map">about</a>
+                        </li>
+                        <li class="menu_header_burger_item">
+                            <a href="#photo_section">gallery</a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav_item">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="./img.hero1/Vector.webp" type="image/svg" />
+                                    <img src="./img.hero1/Vector.svg" alt="search" />
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="./img.hero1/Vector(1).svg" type="image/svg" />
+                                    <img src="./img.hero1/Vector1.svg" alt="Menu icon" />
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container container_hero_info">
+                <h1 class="h1_hero_title">EXPLORE INDONESIA</h1>
+                <button class="btn_trevelling">Start travelling</button>
+                <div class="hero-wraper">
+                    <ul class="title_here_count">
+                        <li class="title_here_count_item">
+                            <p class="title_here_count_item_numders">01</p>
+                            <h3 class="title_here_count_item_title">Title here</h3>
+                            <p class="title_here_count_item_text">
+                                Lorem ipsum dolor sit amet et amet ist ame.
+                            </p>
+                        </li>
+                        <li class="title_here_count_item">
+                            <p class="title_here_count_item_numders">02</p>
+                            <h3 class="title_here_count_item_title">Title here</h3>
+                            <p class="title_here_count_item_text">
+                                Lorem ipsum dolor sit amet et amet ist ame.
+                            </p>
+                        </li>
+                        <li class="title_here_count_item">
+                          <p class="title_here_count_item_numders">03</p>
+                            <h3 class="title_here_count_item_title">Title here</h3>
+                            <p class="title_here_count_item_text">
+                                Lorem ipsum dolor sit amet et amet ist ame.
+                            </p>
+                        </li>
+                    </ul>
+                    <a class="hero-picture-link" href="#">
+                        <picture class="hero-picture">
+                            <source srcset="./img.hero1/palms@1.avif" type="image/avif" />
+                            <source srcset="./img.hero1/palms@1.jpg" type="image/jpg" />
+                            <source srcset="./img.hero1/palms@1.webp" type="image/webp" />
+                            <img class="hero-picture" src="./img.hero1/palms@1.avif" alt="palms" />
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </section>
   <section class="walkways">
     <div class="card">
       <picture>
