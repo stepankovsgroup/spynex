@@ -1,29 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.gallery div');
-  // const modal = document.querySelector('#myModal');
-  // const closeBtn = modal.querySelector('.close-btn');
-  // const modalImage = modal.querySelector('.modal-img')
+ const modal = document.querySelector('#myModal');
+ const closeBtn = modal.querySelector('.close-btn');
+const modalImage = modal.querySelector('.modal-img')
 
-  // images.forEach((imageBlock) => {
-  //   imageBlock.addEventListener('click', () => {
-  //     const img = imageBlock.querySelector("img");
-  //     modal.style.display = 'flex';
-  //     modalImage.innerHTML = '';
+ images.forEach((imageBlock) => {
+  imageBlock.addEventListener('click', () => {
+    const img = imageBlock.querySelector("img");
+   modal.style.display = 'flex';
+     modalImage.innerHTML = '';
 
-  //     const clonedImage = img.cloneNode(true);
-  //     modalImage.appendChild(clonedImage);
-  //   });
-  // })
+  const clonedImage = img.cloneNode(true);
+    modalImage.appendChild(clonedImage);
+   });
+   })
 
-  // closeBtn.addEventListener('click', () => {
-  //   modal.style.display = 'none';
-  // });
+  closeBtn.addEventListener('click', () => {
+   modal.style.display = 'none';
+   });
 
-  // window.addEventListener('click', (event) => {
-  //   if (event.target === modal) {
-  //     modal.style.display = 'none';
-  //   }
-  // });
+   window.addEventListener('click', (event) => {
+     if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+   });
   images.forEach((imageBlock) => {
     imageBlock.addEventListener('click', () => {
       const img = imageBlock.querySelector("img");
